@@ -1,0 +1,84 @@
+body{
+    width: 400px;
+    height: 800px;
+    margin: auto;
+    background-image: url("/background11.gif");
+    
+}
+
+.square{
+    width: 127px;   
+    height: 138px;
+    margin: 1px;
+    font-size: 80px;
+    color: beige;
+    text-align: center;
+    font-family:cursive;
+    border: 1px solid #221a1acf;
+    float: left;
+    cursor: pointer;
+    background-color: rgb(230, 207, 231);
+    position: relative;
+    right: 80px;
+}
+  .box{
+      display:flex;
+  }
+    .one .two .three{
+     flex-direction: row;
+    }
+
+
+h1{
+    color: palegoldenrod;
+    font-family:cursive ;
+    font-size: 45px;
+    text-align: center;
+}
+#playButton{
+    border-radius: 12px;
+    padding: 20px 40px;
+    margin: 25px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(185, 113, 125);
+    cursor: pointer;
+    position: absolute;
+    bottom: 100px;
+    left: 500px;
+
+}
+#playButton:hover{
+    background-color: gray;
+}
+#turnX{
+    width: 180px;
+    height: 200px;
+    position: absolute;
+    right: 80px;
+    bottom: 380px;
+    border-radius: 25px;
+}
+#turnO{
+    width: 180px;
+    height: 200px;
+    position: absolute;
+    right: 350px;
+    bottom: 380px;
+    border-radius: 25px;
+}
+#joeScore{
+    font-family: cursive;
+    color: palegoldenrod;
+    position: absolute;
+    right: 350px;
+    bottom: 250px;
+    
+}
+#rossScore{
+    font-family: cursive;
+    color: palegoldenrod;
+    position: absolute;
+    right: 100px;
+    bottom: 250px;
+}

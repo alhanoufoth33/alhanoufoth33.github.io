@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Tic Tac Toe </title>
+    <link rel="stylesheet" href="TicTacToe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<body background="aaa.jpg">
+    
+        <audio src="friends.mp3"> </audio>  
+
+        <header>
+            <h1> Friends Tic Tac Toe </h1>
+            </header>
+          <div class="playerImg">
+                             <h2 id="joeScore"> player 1 : Joey </h2>
+                            
+                          <h2 id="rossScore"> player 2 : Ross </h2> 
+                        
+                      
+        
+                 
+                    <a class="btnPrimary" > <img id="turnX" src="/ross.png" > </a>
+                    <a class="btnPrimary" > <img id="turnO" src="/Joey-Tribbiani.png" > </a>
+                            </div>
+    <div class="box">
+        <div class="one">
+         <div class="square" id="A1" onclick="insert(this.id)"></div>
+         <div class="square" id="A2" onclick="insert(this.id)"></div>
+         <div class="square" id="A3" onclick="insert(this.id)"></div>
+        </div>
+    <div class="two">
+         <div class="square" id="A4" onclick="insert(this.id)"></div>
+         <div class="square" id="A5" onclick="insert(this.id)"></div>
+         <div class="square" id="A6" onclick="insert(this.id)"></div>
+    </div>
+        <div class="three">
+         <div class="square" id="A7" onclick="insert(this.id)"></div>
+         <div class="square" id="A8" onclick="insert(this.id)"></div>
+         <div class="square" id="A9" onclick="insert(this.id)"></div>
+        </div>
+             <div>
+         <button class="animated infinite pulse " id="playButton" onclick="restGame()"> Play again </button>
+             </div>
+             
+     </div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="/TicTacToe.js"> </script>
+</body>
+</html>
