@@ -2,7 +2,12 @@ body{
     width: 400px;
     height: 800px;
     margin: auto;
-    background-image: url("/background11.gif");
+    background-image: url("/friends...gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    
     
 }
 
@@ -11,7 +16,7 @@ body{
     height: 138px;
     margin: 1px;
     font-size: 80px;
-    color: beige;
+    color: gray;
     text-align: center;
     font-family:cursive;
     border: 1px solid #221a1acf;
@@ -25,6 +30,7 @@ body{
       display:flex;
   }
     .one .two .three{
+        
      flex-direction: row;
     }
 

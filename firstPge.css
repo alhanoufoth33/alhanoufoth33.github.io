@@ -8,15 +8,30 @@ body{
 }
 button{
     border-radius: 12px;
-    padding: 20px 40px;
+    padding: 15px 20px;
     margin: 25px;
     font-size: 25px;
     font-family: cursive;
-    color: aliceblue;
     background-color:rgb(236, 106, 122);
     cursor: pointer;
     position: absolute;
-    bottom: 300px;
-    right: 100px;
-
+    bottom: 100px;
+    right: 50px;
 }
+.Game-instructions{
+    padding: 20px 5px;
+    margin: 100px auto ;
+    text-align: center;
+    color: rgb(243, 243, 196);
+    position: relative;
+    left: 1030px;
+    top: 250px;
+    font-style: bold;
+
+ }
+ ul{
+     font-size: 20px;
+     letter-spacing: 2px;
+     text-align: center;
+     list-style: none;
+ }

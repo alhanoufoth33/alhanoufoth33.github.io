@@ -1,17 +1,18 @@
 
 var turn = true;  // true means x = joey(player 1) turn 
 var squares =[];
-
+var gameOver = false;
   
-
+// function to check the winner 
  function checkWinner(){
     
       for (var i=1; i <=9; i++){
           squares[i]=document.getElementById('A'+i).innerHTML;
       }
-
+   
      // check horizantal
-     if (squares[1] == squares[2] && squares[2]== squares[3] && squares[1] !=""){
+     if (squares[1] == squares[2] && squares[2]== squares[3] && squares[1] !="" ){
+       gameOver = true
         swal({
             title: "Congrats!",
             text: "Player" + "  " + squares[1]+"   "+ "is win!",
@@ -22,6 +23,7 @@ var squares =[];
          
       }
         if (squares[4] == squares[5] && squares[5]== squares[6] && squares[4] !=""){
+          gameOver = true
         swal({
             title: "Congrats!",
             text: "Player" + "   " + squares[4]+"  "+ "is win!",
@@ -31,6 +33,7 @@ var squares =[];
          
       }
         if (squares[7] == squares[8] && squares[8]== squares[9] && squares[7] !=""){
+          gameOver = true
         swal({
             title: "Congrats!",
             text: "Player" + "   " + squares[7]+"   "+ "is win!",
@@ -42,6 +45,7 @@ var squares =[];
 
       // check vertical 
         if (squares[1] == squares[4] && squares[4]== squares[7] && squares[1] !=""){
+          gameOver = true
         swal({
             title: "Congrats!",
             text: "Player" +"  " + squares[1]+"   "+ "is win!",
@@ -51,6 +55,7 @@ var squares =[];
          
      }
         if (squares[2] == squares[5] && squares[5]== squares[8] && squares[2] !=""){
+          gameOver = true
         swal({
             title: "Congrats!",
             text: "Player" +"   " + squares[2]+"   "+ "is win!",
@@ -60,6 +65,7 @@ var squares =[];
         
      }
        if (squares[3] == squares[6] && squares[6]== squares[9] && squares[3] !=""){
+        gameOver = true
         swal({
             title: "Congrats!",
             text: "Player" +"    " + squares[3]+"   "+ "is win!",
@@ -71,6 +77,7 @@ var squares =[];
 
      // check digonal 
        if (squares[1] == squares[5] && squares[5]== squares[9] && squares[1] !=""){
+        gameOver = true
         swal({
             title: "Congrats!",
             text: "Player" +"    " + squares[1] + "      " +  "is win!",
@@ -80,6 +87,7 @@ var squares =[];
          
      }
        if (squares[3] == squares[5] && squares[5]== squares[7] && squares[3] !=""){
+        gameOver = true
         swal({
             title: "Congrats!",
             text: "Player" + "   " + squares[3]+"     "+ "is win!",
@@ -88,11 +96,13 @@ var squares =[];
           });
         
      }
-      if (moves == 9)
+     // this if statment for alert message when no one win 
+      if (moves == 9 && gameOver !== true )
       {
          swal("Thers no winner!!");
         };
       }
+
       var moves= 0 
 function insert(id){
     var whosWin = document.getElementById(id);
@@ -109,8 +119,10 @@ if(turn && whosWin.innerHTML ==""){
     moves++
     console.log(moves);
 }
+// call the checkWinner function to check who is winner 
 checkWinner();
 }
+// reload to start new game 
 function restGame(){
     location.reload();
 }
